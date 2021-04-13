@@ -53,6 +53,7 @@ Any properly pimped README should naturally have:
 - [ ] an explanation of why the project is relevant
 - [ ] A "getting started/requirements/dependencies" section
 - [ ] Contact information e.g. using Social Icons
+- [ ] A todo/known limitaitons/bugs
 - [ ] Use visual hints appropriately
 - [ ] <s>A table of content</s>
 
@@ -150,13 +151,15 @@ which produces:
 These can be automated quite a bit. E.g. if you publish a package you can have it read the package and software versions from the package publications. You can read more about shields in the shields [website](https://shields.io). 
 
 ## *"Getting Started"*-section
-The getting started section. typically include how to download the project and install relevant package. For most R project this is not really something which people are in the habit of doing, but for python projects you should always include a `requirements.txt` which indicate the required packages (and potentially their versions number). In R you can do something similar. After you have run the script you can use:
+The getting started section. typically include how to download the project and install relevant package. This section is the section which allow people (mostly yourself) to redo the analysis or use parts of it later.
+
+For most R project this is not really something which people are in the habit of doing, but for python projects it is highly used. Any good python project have a `requirements.txt` which indicate the required packages (and potentially their versions number). In R you can do something similar. After you have run the script you can use:
 
 ```r
 sessionInfo()
 ```
 
-```
+```bash
 R version 2.15.0 (2012-03-30)
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -174,17 +177,22 @@ other attached packages:
 
 I highly recommend always attaching this to a project as this make it possible for you to see why something which previously worked doesn't work anymore.
 
-This section should also include other potential things you need to install. It is probably relevant to note here
+This section should also include other potential things you need to install. It is probably relevant to note here that code can be included in markdown using the backticks:
 ```
-single line code can be included using backticks: `2+2`
+single line code can be included using a single backtick: `2+2`
 
 while multiple lines of code can be included using three backticks e.g. (exlude the #)
 #```python
 #for i in range(10):
 #    pass 
 #```
+```
 
-The python here denote the syntax highlighting (the coloration of the text)
+The `python` here denote the syntax highlighting (the coloration of the text) which would make the resulting code more readable:
+
+```python
+for i in range(10):
+    pass 
 ```
 
 ## Contact information and Icons
@@ -195,32 +203,112 @@ Again we want to create a clickable image:
 [![](LINK_TO_IMAGE)](LINK_ON_CLICK)
 
 if you want a bit more control of the size:
-[<img align="left" alt="Hover over text" width="22px" src="LINK_TO_IMAGE" />][LINK_ON_CLIK]
+[<img align="left" alt="Hover over text" width="22px" src="LINK_TO_IMAGE" />][ref]
+
+</details>
+
+[ref]: LINK_ON_CLICK
 ```
 
-[<img align="left" alt="KennethEnevoldsen | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][https://www.linkedin.com/in/kennethenevoldsen/]
-
+E.g. including a twitter icon could look something like this:
+```
+[<img align="left" alt="KCEnevoldsen | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 
 
 </details>
 
 [twitter]: https://twitter.com/KCEnevoldsen
-[linkedin]: https://www.linkedin.com/in/kennethenevoldsen/
+```
+
+[<img align="left" alt="KCEnevoldsen | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+
+
+<br />
+<br />
+
+Again here the link is really the magic, one simply need to change the `twitter.svg` part to get a new image. For full list of possible images you can check out [simpleicons](https://simpleicons.org). One could for instance use `itunes.svg`.
+
+<img align="left" alt="My playlist | Itunes" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/itunes.svg" />
+
+</details>
+
+[twitter]: https://twitter.com/KCEnevoldsen
+
+
+<br />
+<br />
+
+## 🤩 Using visual hints
+Using visual hints is a powerful tool to guide attention and adding these can be quite easy. For instance emoji can be used for section header to make them quickly skimmable e.g. using 🎓 for reference or 🔧 for installations. You can naturally also use icons or similar for this.
+
+Other visual hints could also include other elements such as drop down menus:
+<details>
+<summary>A drop down menu!</summary>
+<br>
+This is a useful feature for hiding long content (e.g. the output of `sessionInfo`). These can be inserted using some simple HTML:
+
+```
+<details>
+<summary>A drop down menu!</summary>
+<br>
+Some very very very long content you want to hide.
+
+</details>
+```
+
+if you want to dropdown menu to start open you can use:
+
+```
+<details open>
+```
+
+</details>
+
+## The *"Known limitations"*-section
+This is basically just the part where you include known bugs. Or potentially things you could have improved. During development you typically see these take the form of a todo list. E.g.
+
+- [x] Create a nice radme
+- [x] add a project description
+- [ ] do the analysis
+
+Which you can create using:
+
+```
+- [x] Create a nice radme
+- [x] add a project description
+- [ ] do the analysis
+```
+
+
+# Making meaningful content from an Assignment
+
+Typically most of you start out with only assignments as your GitHub content. These can however be very impressive GitHubs, but I will offer a few extra tips here.
+
+- 1. Include and add reference to the final product (PDFs can be viewed on GitHub)
+- 2. Include a short summary (e.g. your abstract)
+- 3. Include meaningful plots and tables which support your conclusions
+- 4. Make this readable for non-cogsci students (who haven't seen the assignment beforehand)
+- 5. focus on why it is relevant. This is typically a things left out in assignment type githubs. Where people list what they did, but forget to mention why they did it. Here you could also add what you would change if you were to do it for real. 
+
+# Stealing from other people readmes
+This is probably the best trick. You see something you like? Copy it and do the same. How do you do this?
+
+Go to the desired readme -> Find and click the readme -> Press the "edit" pen or the "raw" button -> find and copy what you like
+
 
 <!-- 
 # How to readme
 - Heading
 - check boxes
 - code, bold, italic, links, images
+- hyperlinks
 - HTML
   - centering
   - images (extra)
   - foldable menus
-  - 
-
 
 # Additional
 -  Making rmd viewable on github
 -  creating gifs
-- how to steal from other peoples github    
+- how to steal from other peoples github
 -->
