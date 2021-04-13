@@ -1,5 +1,8 @@
+# 🤩 Pimp my GitHub
+This is a checklist on how to pimp your GitHub page. If you have a Github which need pimpin' be sure to stroll through the checklist to make sure you have checked out all the relevant points
 
-# Pimp your Profile Checklist
+
+# 🦹‍♂️Pimp your Profile Checklist
 
 Any properly pimped GitHub should naturally have:
 - [ ] Personal readme (optional)
@@ -7,7 +10,7 @@ Any properly pimped GitHub should naturally have:
 - [ ] no stale project
 - [ ] relevantly starred project
 
-## Creating a Personal README
+##  Creating a Personal README
 A good place to start is using the [profile readme generator](https://github.com/rahuldkjain/github-profile-readme-generator). The way you add the readme to profile is to create a repository with your own name (e.g. KennethEnevoldsen) and then a button will appear in the upper right corner for you to add it to your profile.
 
 ## What is a Stale project?
@@ -17,7 +20,7 @@ A stale project is a project which content is boring. I.e. it is not something y
 Projects which you would be glad for your new employer to see as their first impression of you. Things you are proud of. Any relevant project should naturally fullfill the [Pimp your Project Checklist](pimp-your-project-checklist)
 
 
-# Pimp your Project Checklist
+# 🚀 Pimp your Project Checklist
 
 Any properly pimped GitHub project should naturally have:
 - [ ] Meaningful content
@@ -43,7 +46,7 @@ Or steal what you find useful. This is to make it easier for you not harder.
 ## What is a junk file
 Junk files are typically temporary files or files which clearly indicate lack of structure. E.g. having the scripts `Analysis1.rmd`, `Analysis2.rmd` and `Analysis2_final.rmd` indicate this. It makes it also makes it hard for you to find what you are looking for when going back. Junk files also include files which does not need to be shared (or worse shouldn't e.g. due to privacy). Examples of these include the `.Rproj` files.
 
-# Pimp your README Checklist
+# 🌅 Pimp your README Checklist
 
 Any properly pimped README should naturally have:
 - [ ] Properly formatted headings
@@ -238,7 +241,7 @@ Again here the link is really the magic, one simply need to change the `twitter.
 <br />
 <br />
 
-## 🤩 Using visual hints
+## Using visual hints
 Using visual hints is a powerful tool to guide attention and adding these can be quite easy. For instance emoji can be used for section header to make them quickly skimmable e.g. using 🎓 for reference or 🔧 for installations. You can naturally also use icons or similar for this.
 
 Other visual hints could also include other elements such as drop down menus:
